@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>𝒷𝒾𝑒𝓃𝓋𝑒𝓃𝓊𝑒 𝓈𝓊𝓇 𝓂🍩𝓃 𝓈𝒾𝓉𝑒❢❣❣ </title>
+    <link rel="icon" href="favicon.ico" />
+    <style>
+body{ 
+    background: url("kitty.png");
+    background-size: 15%;
+    text-align: center;
+}
+
+h2{
+    background-color: aqua;
+    text-align: center;
+    margin:7%;
+}
+
+button{
+font-family: Comic Sans MS;
+font-weight: 0;
+font-size: 14px;
+color: #fff;
+background-color: #dd00ff;
+padding: 10px 30px;
+border: none;
+box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+border-radius: 25px 26px 26px;
+transition : 1000ms;
+transform: translateY(0);
+align-items: center;
+cursor: pointer;
+}
+
+img {
+    margin-top: -100px;
+}
+
+    </style>
+</head>
+<body>
+    <button id="back" onclick="location.href = '../unlockedhp.html'">Retour à la V2.0</button>
+    <button id="home" onclick="location.href = 'archive.html'">🏠</button>
+    <button id="vert" onclick="location.href = 'vert.html'">Le vert qui clignote =)</button>
+    <button id="dessins" onclick="location.href = 'dessins.html'">Mes dessins ^^</button>
+    <button id="timer">bientôt mon annif!!!!</button>
+    <button id="timer" onclick="location.href = 'nouveau.html'">c nouvo sa c kwa ?</button>
+        <h2> Kiik0u ä tou lé om 2 ma vii3 ki passrôn süre se cite (jtm) 😌 </h2>
+<img src="keur.png">        
+        <script>
+            var countDownDate = new Date("Sep 10, 2025 19:45:00").getTime();
+        
+            var x = setInterval(function() {
+            var now = new Date().getTime();
+            var distance = countDownDate - now;
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        
+            document.getElementById("timer").innerHTML = days + " jours " + "avant mon annif' =D!!!";
+        
+            if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("timer").innerHTML = "EXPIRED";
+          }
+            }, 1000);
+        </script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>𝒷𝒾𝑒𝓃𝓋𝑒𝓃𝓊𝑒 𝓈𝓊𝓇 𝓂🍩𝓃 𝓈𝒾𝓉𝑒❢❣❣ </title>
+    <link rel="icon" href="favicon.ico" />
+    <style>
+body{ 
+    background: url("gallery.jpg");
+    background-size: 100%;
+    text-align: center;
+}
+
+h2{
+    background-color: aqua;
+    text-align: center;
+    margin:10%;
+}
+
+button{
+font-family: Comic Sans MS;
+font-weight: 0;
+font-size: 14px;
+color: #fff;
+background-color: #dd00ff;
+padding: 10px 30px;
+border: none;
+box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+border-radius: 25px 26px 26px;
+transition : 1000ms;
+transform: translateY(0);
+align-items: center;
+cursor: pointer;
+}
+
+    </style>
+</head>
+<body>
+    <button id="back" onclick="location.href = '../unlockedhp.html'">Retour à la V2.0</button>
+    <button id="home" onclick="location.href = 'archive.html'">🏠</button>
+        <button id="vert" onclick="location.href = 'vert.html'">Le vert qui clignote =)</button>
+        <button id="dessins" onclick="location.href = 'dessins.html'">Mes dessins ^^</button>
+        <button id="timer">bientôt mon annif!!!!</button>
+        <button id="timer" onclick="location.href = 'nouveau.html'">c nouvo sa c kwa ?</button>
+
+        <div>
+<img src="chalarmant.png" >
+<img src="Chat touille.png" >
+<img src="Chat2.png" >
+<img src="Chat3.png" >
+<img src="Chatgrin.png" >
+<img src="Chatmical.png" >
+<img src="Chatnniversaire.png" >
+<img src="Chatpeau de fête.png" >
+<img src="chatponais.png" >
+<img src="chatrmeur.png" >
+<img src="Chatrrive pas à dormir.jpg" >
+<img src="chatrtiste.png" >
+        </div>
+
+        <embed name="zik" src="zik.mp3" loop="false" hidden="true" autostart="true">
+
+        <script>
+            var countDownDate = new Date("Sep 10, 2025 19:45:00").getTime();
+        
+            var x = setInterval(function() {
+            var now = new Date().getTime();
+            var distance = countDownDate - now;
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        
+            document.getElementById("timer").innerHTML = days + " jours " + "avant mon annif' =D!!!";
+        
+            if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("timer").innerHTML = "EXPIRED";
+          }
+            }, 1000);
+        </script>
+</body>
+</html>
