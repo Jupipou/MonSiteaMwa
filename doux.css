@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Tangerine:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+html {
+    height: 100%;
+    background: url('media/cherry.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #f0f8ff;
+    cursor:url('media/cursor2.png'), default;
+
+}
+
+body {
+    text-align: center;
+}
+
+p {
+    font-size: 1.2em;
+    color: #333;
+}
+
+#music{
+display:none;
+}
+
+.petals-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Ne bloque pas les interactions sur la page */
+    overflow: hidden;
+    z-index: 10; /* Met les pétales au-dessus du contenu */
+}
+
+.petal {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: url('bg.png'); /* Chemin vers ton image de pétale */
+    background-size: cover;
+    animation: fall linear infinite;
+    opacity: 0.7; /* Légèrement transparent */
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(-100px) rotate(0deg);
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(100vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+#poem-box {
+    background-color: rgb(241, 233, 233); /* Boîte blanche statique */
+    padding: 20px;
+    border-radius: 10px;
+    width: 35%; /* Largeur de la boîte */
+    margin: 0 auto; /* Centrage horizontal */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Ombre légère */
+    margin-top: 10%; /* Espace avec le haut de la page */
+    text-align: center;
+    position: relative;
+}
+
+#poem-container {
+    font-size: 1.5rem;
+    font-family: "PT Serif", serif;
+    font-style: italic;
+    color:#be5678;
+    text-shadow: 1px 1px 3px #8e33514d;
+    /* Pas d'animation ici */
+}
+
+#poem-container div {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    margin-bottom: 10px;
+}
+#back {
+    padding: 10px 20px;
+    font-family: "PT Serif",serif;
+    font-size: 15px;
+    margin-top: 20px;
+    cursor: url('media/cursor2.png'), pointer;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+}
+

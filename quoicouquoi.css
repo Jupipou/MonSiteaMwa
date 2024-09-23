@@ -1,0 +1,76 @@
+.petals-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Ne bloque pas les interactions sur la page */
+    overflow: hidden;
+    z-index: 10; /* Met les pétales au-dessus du contenu */
+}
+
+.petal {
+    position: absolute;
+    width: 20px; /* Taille de base des pétales */
+    height: 20px; /* Taille de base des pétales */
+    background: url('media/bg2.png') no-repeat center center; /* Centrage de l'image */
+    background-size: contain; /* Ajuste l'image pour qu'elle soit entièrement visible */
+    animation: fall linear infinite;
+    opacity: 0.7; /* Légèrement transparent */
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(-100px); /* Position initiale au-dessus de l'écran */
+        opacity: 0; /* Invisible au début */
+    }
+    10% {
+        opacity: 1; /* Visible juste après le début */
+    }
+    100% {
+        transform: translateY(100vh); /* Position finale en bas de l'écran */
+        opacity: 0; /* Invisible à la fin */
+    }
+}
+
+#back {
+    padding: 10px 20px;
+    font-family: "PT Serif",serif;
+    font-size: 15px;
+    margin-top: 20px;
+    cursor:url('media/duck.png'), pointer;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+
+}
+
+body{ 
+    background-color: #161616;
+    text-align: center;
+    cursor:url('media/duck.png'), default;
+}
+
+
+h2 {
+margin-top: 100px;
+margin-bottom: 100px;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-size: 50px;
+color: #FFFFFF;
+text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00;
+}
+
+h1 {
+margin-top: 100px;
+margin-bottom: 50px;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-size: 30px;
+color: #FFFFFF;
+text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00;
+}
+
+#music{
+    display:none;
+}
+
