@@ -3,7 +3,7 @@ const carouselItems = document.querySelectorAll('.carousel-item');
 const carouselTitle = document.getElementById('carouselTitle');
 
 let counter = 0;
-const titles = ["OG Breakdancing Cat", "Chat n°2", "Chat n°3", "Pk vivre 7 vies", "Chat touille (hihihi)", "Chat-rmeur","Insomiaou","Chat-larmant", "Chat-grin", "Chat-nniversaire", "Chat-mical", "Chat-rtiste (c moi XD)", "Chat-ponais (bon'dourhun)","Chat-llahu Akbar ?","Chat-peau de fête -_-", "Chat-man", "Chiemposteur !", "\u2661", "Mehdi n°1", "Mehdi n°2", "Mehdi n°3", "Mehdi n°4"]; // Titles for each image
+const titles = ["OG Breakdancing Cat", "Chat n°2", "Chat n°3", "Pk vivre 7 vies", "Chat touille (hihihi)", "Chat-rmeur","Insomiaou","Chat-larmant", "Chat-grin", "Chat-nniversaire", "Chat-mical", "Chat-rtiste (c moi XD)", "Chat-ponais (bon'dourhun)","Chat-llahu Akbar ?","Chat-peau de fête -_-", "Chat-man", "Chiemposteur !", "\u2661", "Mehdi n°1", "Mehdi n°2", "Mehdi n°3", "Mehdi n°4", "Mehdi n°5"]; // Titles for each image
 const size = carouselItems[0].clientWidth;
 
         // Mettre à jour le titre
